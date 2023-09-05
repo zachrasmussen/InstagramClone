@@ -18,6 +18,7 @@
 		07DE63442AA78E55003C9537 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63432AA78E55003C9537 /* FeedCell.swift */; };
 		07DE63462AA79605003C9537 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63452AA79605003C9537 /* SearchView.swift */; };
 		07DE63482AA79932003C9537 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63472AA79932003C9537 /* LoginView.swift */; };
+		07DE634A2AA79DE0003C9537 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63492AA79DE0003C9537 /* AddEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		07DE63432AA78E55003C9537 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		07DE63452AA79605003C9537 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		07DE63472AA79932003C9537 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		07DE63492AA79DE0003C9537 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				07DE63472AA79932003C9537 /* LoginView.swift */,
+				07DE63492AA79DE0003C9537 /* AddEmailView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				07DE63232AA77A85003C9537 /* ContentView.swift in Sources */,
 				07DE63482AA79932003C9537 /* LoginView.swift in Sources */,
 				07DE63212AA77A85003C9537 /* InstagramCloneApp.swift in Sources */,
+				07DE634A2AA79DE0003C9537 /* AddEmailView.swift in Sources */,
 				07DE63462AA79605003C9537 /* SearchView.swift in Sources */,
 				07DE63402AA786FB003C9537 /* UserStatView.swift in Sources */,
 				07DE63422AA78E40003C9537 /* FeedView.swift in Sources */,
