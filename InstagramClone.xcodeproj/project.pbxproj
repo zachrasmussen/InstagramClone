@@ -51,6 +51,7 @@
 		07DE631F2AA77A85003C9537 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				07DE632E2AA77A96003C9537 /* New Group */,
 				07DE63202AA77A85003C9537 /* InstagramCloneApp.swift */,
 				07DE63222AA77A85003C9537 /* ContentView.swift */,
 				07DE63242AA77A85003C9537 /* Assets.xcassets */,
@@ -65,6 +66,13 @@
 				07DE63272AA77A85003C9537 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07DE632E2AA77A96003C9537 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
