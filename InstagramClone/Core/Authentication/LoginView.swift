@@ -72,7 +72,7 @@ struct LoginView: View {
                 .foregroundColor(.gray)
                 
                 HStack {
-                    Image("party-1")
+                    Image("fb-logo")
                         .resizable()
                         .frame(width: 20, height: 20)
                     

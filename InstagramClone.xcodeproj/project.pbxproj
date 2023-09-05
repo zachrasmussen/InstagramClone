@@ -23,6 +23,7 @@
 		07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63502AA7C124003C9537 /* CreateUsernameView.swift */; };
 		07DE63532AA7C34F003C9537 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63522AA7C34F003C9537 /* CreatePasswordView.swift */; };
 		07DE63552AA7C4CF003C9537 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63542AA7C4CF003C9537 /* CompleteSignUpView.swift */; };
+		07DE63572AA7C87D003C9537 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63562AA7C87D003C9537 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		07DE63502AA7C124003C9537 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		07DE63522AA7C34F003C9537 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		07DE63542AA7C4CF003C9537 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
+		07DE63562AA7C87D003C9537 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		07DE632F2AA77DA7003C9537 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				07DE63562AA7C87D003C9537 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				07DE634A2AA79DE0003C9537 /* AddEmailView.swift in Sources */,
 				07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */,
 				07DE63552AA7C4CF003C9537 /* CompleteSignUpView.swift in Sources */,
+				07DE63572AA7C87D003C9537 /* User.swift in Sources */,
 				07DE63462AA79605003C9537 /* SearchView.swift in Sources */,
 				07DE634F2AA7C01D003C9537 /* IGTextFieldModifier.swift in Sources */,
 				07DE63402AA786FB003C9537 /* UserStatView.swift in Sources */,

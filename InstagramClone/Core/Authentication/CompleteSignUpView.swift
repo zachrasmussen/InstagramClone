@@ -13,6 +13,7 @@ struct CompleteSignUpView: View {
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
+            
             Text("Welcome to Bubble,")
                 .font(.title2)
                 .fontWeight(.bold)
