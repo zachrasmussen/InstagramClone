@@ -25,9 +25,9 @@ struct ProfileView: View {
                 
                PostGridView(posts: posts)
             }
-            
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 

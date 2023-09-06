@@ -16,28 +16,26 @@ struct CurrentUserProfileView: View {
     }
     
     var body: some View {
-        ScrollView {
-            // header
+        NavigationStack {
+            ScrollView {
+                // header
+                ProfileHeaderView(user: user)
             
-            ProfileHeaderView(user: user)
-            
-            // post grid view
-
-            PostGridView(posts: posts)
-            
-        }
-        
-        .navigationTitle("Profile")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    AuthService.shared.signout()
-                } label: {
-                    Image(systemName: "line.3.horizontal")
-                        .foregroundColor(.black)
-                }
+                // post grid view
+                PostGridView(posts: posts)
             }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        AuthService.shared.signout()
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(.black)
+                    }
+                }
+        }
         }
     }
 }
