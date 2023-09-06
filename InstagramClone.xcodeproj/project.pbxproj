@@ -25,6 +25,10 @@
 		07DE63552AA7C4CF003C9537 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63542AA7C4CF003C9537 /* CompleteSignUpView.swift */; };
 		07DE63572AA7C87D003C9537 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63562AA7C87D003C9537 /* User.swift */; };
 		07DE63592AA7D19D003C9537 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63582AA7D19D003C9537 /* CurrentUserProfileView.swift */; };
+		07DE635B2AA89398003C9537 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE635A2AA89398003C9537 /* Post.swift */; };
+		07DE635D2AA89E36003C9537 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE635C2AA89E36003C9537 /* PostGridView.swift */; };
+		07DE635F2AA8A1EE003C9537 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE635E2AA8A1EE003C9537 /* ProfileHeaderView.swift */; };
+		07DE63612AA8A37B003C9537 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63602AA8A37B003C9537 /* UploadPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		07DE63542AA7C4CF003C9537 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		07DE63562AA7C87D003C9537 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07DE63582AA7D19D003C9537 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		07DE635A2AA89398003C9537 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		07DE635C2AA89E36003C9537 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		07DE635E2AA8A1EE003C9537 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		07DE63602AA8A37B003C9537 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				07DE63562AA7C87D003C9537 /* User.swift */,
+				07DE635A2AA89398003C9537 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,8 +168,8 @@
 		07DE63342AA77DF5003C9537 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				07DE63412AA78E40003C9537 /* FeedView.swift */,
 				07DE63432AA78E55003C9537 /* FeedCell.swift */,
+				07DE63412AA78E40003C9537 /* FeedView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -170,6 +179,7 @@
 			children = (
 				07DE633C2AA780A0003C9537 /* ProfileView.swift */,
 				07DE63582AA7D19D003C9537 /* CurrentUserProfileView.swift */,
+				07DE635E2AA8A1EE003C9537 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -200,6 +210,7 @@
 		07DE63392AA77E70003C9537 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				07DE63602AA8A37B003C9537 /* UploadPostView.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -209,6 +220,7 @@
 			children = (
 				07DE633F2AA786FB003C9537 /* UserStatView.swift */,
 				07DE634E2AA7C01D003C9537 /* IGTextFieldModifier.swift */,
+				07DE635C2AA89E36003C9537 /* PostGridView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -284,13 +296,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DE63442AA78E55003C9537 /* FeedCell.swift in Sources */,
+				07DE63612AA8A37B003C9537 /* UploadPostView.swift in Sources */,
 				07DE633D2AA780A0003C9537 /* ProfileView.swift in Sources */,
 				07DE63232AA77A85003C9537 /* ContentView.swift in Sources */,
 				07DE63482AA79932003C9537 /* LoginView.swift in Sources */,
+				07DE635B2AA89398003C9537 /* Post.swift in Sources */,
 				07DE63212AA77A85003C9537 /* InstagramCloneApp.swift in Sources */,
 				07DE63592AA7D19D003C9537 /* CurrentUserProfileView.swift in Sources */,
 				07DE634A2AA79DE0003C9537 /* AddEmailView.swift in Sources */,
+				07DE635D2AA89E36003C9537 /* PostGridView.swift in Sources */,
 				07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */,
+				07DE635F2AA8A1EE003C9537 /* ProfileHeaderView.swift in Sources */,
 				07DE63552AA7C4CF003C9537 /* CompleteSignUpView.swift in Sources */,
 				07DE63572AA7C87D003C9537 /* User.swift in Sources */,
 				07DE63462AA79605003C9537 /* SearchView.swift in Sources */,
