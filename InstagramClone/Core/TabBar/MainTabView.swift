@@ -18,7 +18,7 @@ struct MainTabView: View {
                 }
                 .tabItem {
                     Image(systemName: "house")
-                }
+                }.tag(0)
             
             SearchView()
                 .onAppear {
@@ -26,15 +26,15 @@ struct MainTabView: View {
                 }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
-                }
+                }.tag(1)
             
-            UploadPostView()
+            UploadPostView(tabIndex: $selectedIndex)
                 .onAppear {
                     selectedIndex = 2
                 }
                 .tabItem {
                     Image(systemName: "plus.square")
-                }
+                }.tag(2)
             
             Text("Notifications")
                 .onAppear {
@@ -42,7 +42,7 @@ struct MainTabView: View {
                 }
                 .tabItem {
                     Image(systemName: "heart")
-                }
+                }.tag(3)
             
             CurrentUserProfileView(user: User.MOCK_USERS[0])
                 .onAppear {
@@ -50,7 +50,7 @@ struct MainTabView: View {
                 }
                 .tabItem {
                     Image(systemName: "person")
-                }
+                }.tag(4)
         }
         .accentColor(.black)
     }
