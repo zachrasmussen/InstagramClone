@@ -38,6 +38,7 @@
 		07DE63702AA8DB9D003C9537 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 07DE636F2AA8DB9D003C9537 /* FirebaseStorage */; };
 		07DE63742AA8DDB1003C9537 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63732AA8DDB1003C9537 /* AuthService.swift */; };
 		07DE63782AA8DF06003C9537 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63772AA8DF06003C9537 /* ContentViewModel.swift */; };
+		07DE637B2AA8E327003C9537 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE637A2AA8E327003C9537 /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		07DE63662AA8DA79003C9537 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		07DE63732AA8DDB1003C9537 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		07DE63772AA8DF06003C9537 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		07DE637A2AA8E327003C9537 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +177,9 @@
 		07DE63332AA77DEA003C9537 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				07DE63722AA8DD92003C9537 /* Service */,
 				07DE63712AA8DD52003C9537 /* View */,
+				07DE63792AA8E2A8003C9537 /* ViewModel */,
+				07DE63722AA8DD92003C9537 /* Service */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -280,6 +283,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		07DE63792AA8E2A8003C9537 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07DE637A2AA8E327003C9537 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +385,7 @@
 				07DE635D2AA89E36003C9537 /* PostGridView.swift in Sources */,
 				07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */,
 				07DE63782AA8DF06003C9537 /* ContentViewModel.swift in Sources */,
+				07DE637B2AA8E327003C9537 /* RegistrationViewModel.swift in Sources */,
 				07DE63632AA8B626003C9537 /* UploadPostViewModel.swift in Sources */,
 				07DE635F2AA8A1EE003C9537 /* ProfileHeaderView.swift in Sources */,
 				07DE63552AA7C4CF003C9537 /* CompleteSignUpView.swift in Sources */,

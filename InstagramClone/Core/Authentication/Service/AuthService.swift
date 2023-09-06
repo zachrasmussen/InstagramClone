@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseAuth
 
-class AuthServices {
+class AuthService {
     
     @Published var userSession: FirebaseAuth.User?
     
@@ -23,7 +23,9 @@ class AuthServices {
     }
     
     func createUser(email:String, password: String, username: String) async throws {
-        
+        print("Email is \(email)")
+        print("Password is \(password)")
+        print("Username is \(username)")
     }
     
     func loadUserData() async throws {
