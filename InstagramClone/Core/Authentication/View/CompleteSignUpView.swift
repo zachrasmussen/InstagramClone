@@ -15,7 +15,7 @@ struct CompleteSignUpView: View {
         VStack(spacing: 12) {
             Spacer()
             
-            Text("Welcome to Bubble,")
+            Text("Welcome to Bubble, \(viewModel.username)")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
