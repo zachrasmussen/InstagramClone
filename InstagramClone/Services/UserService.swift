@@ -10,14 +10,9 @@ import Firebase
 
 struct UserService {
     
+    @MainActor
     static func fetchAllUsers() async throws -> [User] {
-        var users = [User]()
         let snapshot = try await Firestore.firestore().collection("users").getDocuments()
-        let documents = snapshot.documents
-        
-        for doc in documents {
-            print(doc.data())
-        }
-        return users
+        return snapshot.documents.compactMap({ try? $0.data(as: User.self) })
     }
 }
