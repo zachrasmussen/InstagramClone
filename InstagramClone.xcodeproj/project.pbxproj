@@ -29,6 +29,7 @@
 		07DE635D2AA89E36003C9537 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE635C2AA89E36003C9537 /* PostGridView.swift */; };
 		07DE635F2AA8A1EE003C9537 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE635E2AA8A1EE003C9537 /* ProfileHeaderView.swift */; };
 		07DE63612AA8A37B003C9537 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63602AA8A37B003C9537 /* UploadPostView.swift */; };
+		07DE63632AA8B626003C9537 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63622AA8B626003C9537 /* UploadPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		07DE635C2AA89E36003C9537 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		07DE635E2AA8A1EE003C9537 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		07DE63602AA8A37B003C9537 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		07DE63622AA8B626003C9537 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				07DE63602AA8A37B003C9537 /* UploadPostView.swift */,
+				07DE63622AA8B626003C9537 /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				07DE634A2AA79DE0003C9537 /* AddEmailView.swift in Sources */,
 				07DE635D2AA89E36003C9537 /* PostGridView.swift in Sources */,
 				07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */,
+				07DE63632AA8B626003C9537 /* UploadPostViewModel.swift in Sources */,
 				07DE635F2AA8A1EE003C9537 /* ProfileHeaderView.swift in Sources */,
 				07DE63552AA7C4CF003C9537 /* CompleteSignUpView.swift in Sources */,
 				07DE63572AA7C87D003C9537 /* User.swift in Sources */,

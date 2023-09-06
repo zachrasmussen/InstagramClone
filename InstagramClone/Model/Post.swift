@@ -49,7 +49,7 @@ extension Post {
                   likes: 105,
                   imageUrl: "party-4",
                   timestamp: Date(),
-                  user: User.MOCK_USERS[0]),
+                  user: User.MOCK_USERS[3]),
         
             .init(id: NSUUID().uuidString,
                   ownerUid: NSUUID().uuidString,
@@ -57,6 +57,6 @@ extension Post {
                   likes: 105,
                   imageUrl: "party-5",
                   timestamp: Date(),
-                  user: User.MOCK_USERS[0]),
+                  user: User.MOCK_USERS[4]),
     ]
 }
