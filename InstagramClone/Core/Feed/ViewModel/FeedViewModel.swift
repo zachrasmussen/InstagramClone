@@ -12,6 +12,6 @@ class FeedViewModel: ObservableObject {
     @Published var posts = [Post]()
     
     func fetchPosts() async throws {
-        let snapshot = Firestore.firestore().collection("posts").getDocuments()
+        let snapshot = try await Firestore.firestore().collection("posts").getDocuments()
     }
 }
