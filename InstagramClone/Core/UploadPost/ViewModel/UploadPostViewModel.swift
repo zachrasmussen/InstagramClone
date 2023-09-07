@@ -36,6 +36,7 @@ class UploadPostViewModel: ObservableObject {
         
         let postRef = Firestore.firestore().collection("posts").document()
             guard let imageUrl = try await ImageUploader.uploadImage(image: uiImage) else { return }
+        // I think I need to change the 'id' so its not an open string??
         let post = Post(id: "", ownerUid: uid, caption: caption, likes: 0, imageUrl: imageUrl, timestamp: Timestamp())
         guard let encodedPost = try? Firestore.Encoder().encode(post) else { return }
             
