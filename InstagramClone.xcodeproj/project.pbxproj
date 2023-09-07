@@ -44,6 +44,7 @@
 		07DE63832AA911AF003C9537 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63822AA911AF003C9537 /* SearchViewModel.swift */; };
 		07DE63852AA95E14003C9537 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63842AA95E14003C9537 /* EditProfileView.swift */; };
 		07DE63872AA965E5003C9537 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63862AA965E5003C9537 /* EditProfileViewModel.swift */; };
+		07DE638B2AA96FB5003C9537 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE638A2AA96FB5003C9537 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		07DE63822AA911AF003C9537 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		07DE63842AA95E14003C9537 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		07DE63862AA965E5003C9537 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		07DE638A2AA96FB5003C9537 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				07DE637E2AA9109B003C9537 /* UserService.swift */,
+				07DE638A2AA96FB5003C9537 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				07DE63782AA8DF06003C9537 /* ContentViewModel.swift in Sources */,
 				07DE63852AA95E14003C9537 /* EditProfileView.swift in Sources */,
 				07DE637D2AA8FCF1003C9537 /* LoginViewModel.swift in Sources */,
+				07DE638B2AA96FB5003C9537 /* ImageUploader.swift in Sources */,
 				07DE637B2AA8E327003C9537 /* RegistrationViewModel.swift in Sources */,
 				07DE63632AA8B626003C9537 /* UploadPostViewModel.swift in Sources */,
 				07DE635F2AA8A1EE003C9537 /* ProfileHeaderView.swift in Sources */,
