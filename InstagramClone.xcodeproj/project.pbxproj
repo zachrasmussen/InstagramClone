@@ -48,6 +48,8 @@
 		07DE63902AAA2FAC003C9537 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 07DE638F2AAA2FAC003C9537 /* Kingfisher */; };
 		07DE63922AAA35F9003C9537 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63912AAA35F9003C9537 /* CircularProfileImageView.swift */; };
 		07DE63982AAA41D8003C9537 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63972AAA41D8003C9537 /* FeedViewModel.swift */; };
+		07DE639A2AAA61AB003C9537 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63992AAA61AB003C9537 /* PostService.swift */; };
+		07DE639E2AAA64B9003C9537 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE639D2AAA64B9003C9537 /* PostGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		07DE638A2AA96FB5003C9537 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		07DE63912AAA35F9003C9537 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		07DE63972AAA41D8003C9537 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		07DE63992AAA61AB003C9537 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		07DE639D2AAA64B9003C9537 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 			children = (
 				07DE637E2AA9109B003C9537 /* UserService.swift */,
 				07DE638A2AA96FB5003C9537 /* ImageUploader.swift */,
+				07DE63992AAA61AB003C9537 /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -261,10 +266,8 @@
 		07DE633E2AA786DB003C9537 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				07DE633F2AA786FB003C9537 /* UserStatView.swift */,
-				07DE634E2AA7C01D003C9537 /* IGTextFieldModifier.swift */,
-				07DE635C2AA89E36003C9537 /* PostGridView.swift */,
-				07DE63912AAA35F9003C9537 /* CircularProfileImageView.swift */,
+				07DE639C2AAA6491003C9537 /* ViewModel */,
+				07DE639B2AAA647B003C9537 /* View */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -389,6 +392,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		07DE639B2AAA647B003C9537 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07DE633F2AA786FB003C9537 /* UserStatView.swift */,
+				07DE634E2AA7C01D003C9537 /* IGTextFieldModifier.swift */,
+				07DE635C2AA89E36003C9537 /* PostGridView.swift */,
+				07DE63912AAA35F9003C9537 /* CircularProfileImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07DE639C2AAA6491003C9537 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07DE639D2AAA64B9003C9537 /* PostGridViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -488,7 +510,9 @@
 				07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */,
 				07DE63982AAA41D8003C9537 /* FeedViewModel.swift in Sources */,
 				07DE63782AA8DF06003C9537 /* ContentViewModel.swift in Sources */,
+				07DE639A2AAA61AB003C9537 /* PostService.swift in Sources */,
 				07DE63852AA95E14003C9537 /* EditProfileView.swift in Sources */,
+				07DE639E2AAA64B9003C9537 /* PostGridViewModel.swift in Sources */,
 				07DE637D2AA8FCF1003C9537 /* LoginViewModel.swift in Sources */,
 				07DE638B2AA96FB5003C9537 /* ImageUploader.swift in Sources */,
 				07DE637B2AA8E327003C9537 /* RegistrationViewModel.swift in Sources */,
