@@ -50,6 +50,7 @@
 		07DE63982AAA41D8003C9537 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63972AAA41D8003C9537 /* FeedViewModel.swift */; };
 		07DE639A2AAA61AB003C9537 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63992AAA61AB003C9537 /* PostService.swift */; };
 		07DE639E2AAA64B9003C9537 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE639D2AAA64B9003C9537 /* PostGridViewModel.swift */; };
+		07FBC30B2AB20F6500063EFF /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC30A2AB20F6500063EFF /* FeedCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		07DE63972AAA41D8003C9537 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		07DE63992AAA61AB003C9537 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		07DE639D2AAA64B9003C9537 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
+		07FBC30A2AB20F6500063EFF /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				07DE63972AAA41D8003C9537 /* FeedViewModel.swift */,
+				07FBC30A2AB20F6500063EFF /* FeedCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */,
 				07DE63982AAA41D8003C9537 /* FeedViewModel.swift in Sources */,
 				07DE63782AA8DF06003C9537 /* ContentViewModel.swift in Sources */,
+				07FBC30B2AB20F6500063EFF /* FeedCellViewModel.swift in Sources */,
 				07DE639A2AAA61AB003C9537 /* PostService.swift in Sources */,
 				07DE63852AA95E14003C9537 /* EditProfileView.swift in Sources */,
 				07DE639E2AAA64B9003C9537 /* PostGridViewModel.swift in Sources */,
