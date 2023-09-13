@@ -9,7 +9,15 @@ import SwiftUI
 import Kingfisher
 
 struct FeedCell: View {
-    let post: Post
+    @ObservableObject var viewModel: FeedCellViewModel
+    
+    private var post: Post {
+        return viewModel.post
+    }
+    
+    init(post: Post) {
+        self.viewModel = FeedCellViewModel(post: post)
+    }
     
     var body: some View {
         VStack {
