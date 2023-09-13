@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct FeedCell: View {
-    @ObservableObject var viewModel: FeedCellViewModel
+    @ObservedObject var viewModel: FeedCellViewModel
     
     private var post: Post {
         return viewModel.post
