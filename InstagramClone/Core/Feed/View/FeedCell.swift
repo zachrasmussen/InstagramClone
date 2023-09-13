@@ -79,12 +79,14 @@ struct FeedCell: View {
             
             // likes label
             
-            Text("\(post.likes) likes")
-                .font(.footnote)
-                .fontWeight(.semibold)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 10)
-                .padding(.top, 1)
+            if post.likes > 0 {
+                Text("\(post.likes) likes")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 10)
+                    .padding(.top, 1)
+            }
             
             // caption label
             
