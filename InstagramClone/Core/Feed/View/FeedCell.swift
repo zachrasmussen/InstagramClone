@@ -109,6 +109,8 @@ struct FeedCell: View {
         }
         .sheet(isPresented: $showComments, content: {
             CommentsView()
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
         })
     }
     
