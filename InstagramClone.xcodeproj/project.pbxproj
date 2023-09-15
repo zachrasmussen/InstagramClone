@@ -51,6 +51,8 @@
 		07DE639A2AAA61AB003C9537 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63992AAA61AB003C9537 /* PostService.swift */; };
 		07DE639E2AAA64B9003C9537 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE639D2AAA64B9003C9537 /* PostGridViewModel.swift */; };
 		07FBC30B2AB20F6500063EFF /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC30A2AB20F6500063EFF /* FeedCellViewModel.swift */; };
+		07FDD5B32AB3D8D90030AE1F /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B22AB3D8D90030AE1F /* CommentCell.swift */; };
+		07FDD5B52AB3DA110030AE1F /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B42AB3DA110030AE1F /* CommentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		07DE63992AAA61AB003C9537 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		07DE639D2AAA64B9003C9537 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		07FBC30A2AB20F6500063EFF /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
+		07FDD5B22AB3D8D90030AE1F /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		07FDD5B42AB3DA110030AE1F /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				07DE63332AA77DEA003C9537 /* Authentication */,
+				07FDD5A72AB3D7BA0030AE1F /* Comments */,
 				07DE633E2AA786DB003C9537 /* Components */,
 				07DE63342AA77DF5003C9537 /* Feed */,
 				07DE63352AA77DFC003C9537 /* Profile */,
@@ -414,6 +419,47 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		07FDD5A72AB3D7BA0030AE1F /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				07FDD5A82AB3D7C80030AE1F /* Model */,
+				07FDD5AD2AB3D80C0030AE1F /* Service */,
+				07FDD5AB2AB3D7FA0030AE1F /* View */,
+				07FDD5AC2AB3D8040030AE1F /* ViewModel */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		07FDD5A82AB3D7C80030AE1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07FDD5AB2AB3D7FA0030AE1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07FDD5B22AB3D8D90030AE1F /* CommentCell.swift */,
+				07FDD5B42AB3DA110030AE1F /* CommentsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07FDD5AC2AB3D8040030AE1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		07FDD5AD2AB3D80C0030AE1F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -504,6 +550,7 @@
 				07DE63482AA79932003C9537 /* LoginView.swift in Sources */,
 				07DE63872AA965E5003C9537 /* EditProfileViewModel.swift in Sources */,
 				07DE63742AA8DDB1003C9537 /* AuthService.swift in Sources */,
+				07FDD5B32AB3D8D90030AE1F /* CommentCell.swift in Sources */,
 				07DE637F2AA9109B003C9537 /* UserService.swift in Sources */,
 				07DE635B2AA89398003C9537 /* Post.swift in Sources */,
 				07DE63212AA77A85003C9537 /* InstagramCloneApp.swift in Sources */,
@@ -527,6 +574,7 @@
 				07DE63462AA79605003C9537 /* SearchView.swift in Sources */,
 				07DE634F2AA7C01D003C9537 /* IGTextFieldModifier.swift in Sources */,
 				07DE63402AA786FB003C9537 /* UserStatView.swift in Sources */,
+				07FDD5B52AB3DA110030AE1F /* CommentsView.swift in Sources */,
 				07DE63422AA78E40003C9537 /* FeedView.swift in Sources */,
 				07DE63922AAA35F9003C9537 /* CircularProfileImageView.swift in Sources */,
 				07DE63832AA911AF003C9537 /* SearchViewModel.swift in Sources */,

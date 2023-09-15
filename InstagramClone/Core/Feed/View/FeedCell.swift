@@ -10,6 +10,7 @@ import Kingfisher
 
 struct FeedCell: View {
     @ObservedObject var viewModel: FeedCellViewModel
+    @State private var showComments = false
     
     private var post: Post {
         return viewModel.post
@@ -57,7 +58,7 @@ struct FeedCell: View {
                 }
                 
                 Button {
-                    print("comment on post")
+                    showComments.toggle()
                 } label: {
                         Image(systemName: "bubble.right")
                             .imageScale(.large)
@@ -106,6 +107,9 @@ struct FeedCell: View {
                 .padding(.top, 1)
                 .foregroundColor(.gray)
         }
+        .sheet(isPresented: $showComments, content: {
+            CommentsView()
+        })
     }
     
     private func handleLikeTapped() {
