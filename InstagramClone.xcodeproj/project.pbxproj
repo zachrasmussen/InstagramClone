@@ -56,6 +56,7 @@
 		07FDD5B72AB49DCE0030AE1F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B62AB49DCE0030AE1F /* Comment.swift */; };
 		07FDD5B92AB49EE50030AE1F /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B82AB49EE50030AE1F /* CommentService.swift */; };
 		07FDD5BB2AB49EF60030AE1F /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5BA2AB49EF60030AE1F /* CommentsViewModel.swift */; };
+		07FDD5BD2AB4CA8C0030AE1F /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5BC2AB4CA8C0030AE1F /* DeveloperPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		07FDD5B62AB49DCE0030AE1F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		07FDD5B82AB49EE50030AE1F /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
 		07FDD5BA2AB49EF60030AE1F /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		07FDD5BC2AB4CA8C0030AE1F /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		07DE63302AA77DAC003C9537 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				07FDD5BC2AB4CA8C0030AE1F /* DeveloperPreview.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				07DE634A2AA79DE0003C9537 /* AddEmailView.swift in Sources */,
 				07DE635D2AA89E36003C9537 /* PostGridView.swift in Sources */,
 				07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */,
+				07FDD5BD2AB4CA8C0030AE1F /* DeveloperPreview.swift in Sources */,
 				07DE63982AAA41D8003C9537 /* FeedViewModel.swift in Sources */,
 				07DE63782AA8DF06003C9537 /* ContentViewModel.swift in Sources */,
 				07FBC30B2AB20F6500063EFF /* FeedCellViewModel.swift in Sources */,
