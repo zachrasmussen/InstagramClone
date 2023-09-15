@@ -108,7 +108,7 @@ struct FeedCell: View {
                 .foregroundColor(.gray)
         }
         .sheet(isPresented: $showComments, content: {
-            CommentsView()
+            CommentsView(post:  post)
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
         })

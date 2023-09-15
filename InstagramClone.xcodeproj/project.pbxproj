@@ -54,6 +54,8 @@
 		07FDD5B32AB3D8D90030AE1F /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B22AB3D8D90030AE1F /* CommentCell.swift */; };
 		07FDD5B52AB3DA110030AE1F /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B42AB3DA110030AE1F /* CommentsView.swift */; };
 		07FDD5B72AB49DCE0030AE1F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B62AB49DCE0030AE1F /* Comment.swift */; };
+		07FDD5B92AB49EE50030AE1F /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B82AB49EE50030AE1F /* CommentService.swift */; };
+		07FDD5BB2AB49EF60030AE1F /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5BA2AB49EF60030AE1F /* CommentsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,8 @@
 		07FDD5B22AB3D8D90030AE1F /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		07FDD5B42AB3DA110030AE1F /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		07FDD5B62AB49DCE0030AE1F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		07FDD5B82AB49EE50030AE1F /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		07FDD5BA2AB49EF60030AE1F /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,6 +449,7 @@
 			children = (
 				07FDD5B22AB3D8D90030AE1F /* CommentCell.swift */,
 				07FDD5B42AB3DA110030AE1F /* CommentsView.swift */,
+				07FDD5BA2AB49EF60030AE1F /* CommentsViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 		07FDD5AD2AB3D80C0030AE1F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				07FDD5B82AB49EE50030AE1F /* CommentService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -565,6 +571,8 @@
 				07DE63782AA8DF06003C9537 /* ContentViewModel.swift in Sources */,
 				07FBC30B2AB20F6500063EFF /* FeedCellViewModel.swift in Sources */,
 				07DE639A2AAA61AB003C9537 /* PostService.swift in Sources */,
+				07FDD5B92AB49EE50030AE1F /* CommentService.swift in Sources */,
+				07FDD5BB2AB49EF60030AE1F /* CommentsViewModel.swift in Sources */,
 				07DE63852AA95E14003C9537 /* EditProfileView.swift in Sources */,
 				07DE639E2AAA64B9003C9537 /* PostGridViewModel.swift in Sources */,
 				07DE637D2AA8FCF1003C9537 /* LoginViewModel.swift in Sources */,
