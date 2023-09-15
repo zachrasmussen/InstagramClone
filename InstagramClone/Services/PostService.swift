@@ -5,10 +5,7 @@
 //  Created by Zachary Rasmussen on 9/7/23.
 //
 
-import Foundation
 import Firebase
-import FirebaseFirestoreSwift
-import FirebaseFirestore
 
 struct PostService {
    
@@ -57,7 +54,7 @@ extension PostService {
         guard let uid = Auth.auth().currentUser?.uid else { return false }
         
         let snapshot = try await
-        Firestore.firestore().collection("users").document(uid).collection("user-likes").document(post.id).getDocument()
+            Firestore.firestore().collection("users").document(uid).collection("user-likes").document(post.id).getDocument()
         return snapshot.exists
     }
 }

@@ -53,6 +53,7 @@
 		07FBC30B2AB20F6500063EFF /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC30A2AB20F6500063EFF /* FeedCellViewModel.swift */; };
 		07FDD5B32AB3D8D90030AE1F /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B22AB3D8D90030AE1F /* CommentCell.swift */; };
 		07FDD5B52AB3DA110030AE1F /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B42AB3DA110030AE1F /* CommentsView.swift */; };
+		07FDD5B72AB49DCE0030AE1F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDD5B62AB49DCE0030AE1F /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		07FBC30A2AB20F6500063EFF /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		07FDD5B22AB3D8D90030AE1F /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		07FDD5B42AB3DA110030AE1F /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		07FDD5B62AB49DCE0030AE1F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +435,7 @@
 		07FDD5A82AB3D7C80030AE1F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				07FDD5B62AB49DCE0030AE1F /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				07DE63422AA78E40003C9537 /* FeedView.swift in Sources */,
 				07DE63922AAA35F9003C9537 /* CircularProfileImageView.swift in Sources */,
 				07DE63832AA911AF003C9537 /* SearchViewModel.swift in Sources */,
+				07FDD5B72AB49DCE0030AE1F /* Comment.swift in Sources */,
 				07DE633B2AA77ECD003C9537 /* MainTabView.swift in Sources */,
 				07DE63532AA7C34F003C9537 /* CreatePasswordView.swift in Sources */,
 			);
