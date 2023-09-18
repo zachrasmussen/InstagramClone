@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     let user: User
+    @ObservedObject var viewModel: ProfileViewModel
     @State private var showEditProfile = false
+    
+    init(user: User) {
+        self.viewModel = ProfileViewModel(user: user)
+    }
     
     var body: some View {
         VStack(spacing: 10) {
