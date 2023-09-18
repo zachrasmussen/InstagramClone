@@ -13,7 +13,7 @@ class FeedCellViewModel: ObservableObject {
     
     init(post: Post) {
         self.post = post
-//        Task { try await checkIfUserLikedPost() }
+        Task { try await checkIfUserLikedPost() }
     }
     
     func like() async throws {
