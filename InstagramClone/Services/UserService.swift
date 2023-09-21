@@ -34,3 +34,34 @@ class UserService {
         return snapshot.documents.compactMap({ try? $0.data(as: User.self) })
     }
 }
+
+// Following
+
+extension UserService {
+    static func follow(uid: String) async throws {
+        guard let currentUid = Auth.auth().currentUser?.uid else { return }
+        
+        async let _ = try await FirebaseConstants
+            .FollowingCollection
+            .document(currentUid)
+            .collection("user-following")
+            .document(uid)
+            .setData([:])
+        
+        async let _ = try await FirebaseConstants
+            .FollowersCollection
+            .document(uid)
+            .collection("user-followers")
+            .document(currentUid)
+            .setData([:])
+    }
+    }
+    
+    static func unfollow(uid: String) async throws {
+        
+    }
+    
+    static func checkIfUSerIsFollowed(uid: String) async throws -> Bool {
+        return false
+    }
+}
