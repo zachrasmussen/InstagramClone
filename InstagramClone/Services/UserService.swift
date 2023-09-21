@@ -75,6 +75,15 @@ extension UserService {
     }
     
     static func checkIfUSerIsFollowed(uid: String) async throws -> Bool {
-        return false
+        guard let currentUid = Auth.auth().currentUser?.uid else { return false }
+        
+        let snapshot = try await FirebaseConstants
+            .FollowingCollection
+            .document(currentUid)
+            .collection("user-following")
+            .document(uid)
+            .getDocument()
+        
+        return snapshot.exists
     }
 }
