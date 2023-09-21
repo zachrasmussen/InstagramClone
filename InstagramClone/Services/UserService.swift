@@ -55,10 +55,23 @@ extension UserService {
             .document(currentUid)
             .setData([:])
     }
-    }
     
     static func unfollow(uid: String) async throws {
+        guard let currentUid = Auth.auth().currentUser?.uid else { return }
+
+        async let _ = try await FirebaseConstants
+            .FollowingCollection
+            .document(currentUid)
+            .collection("user-following")
+            .document(uid)
+            .delete()
         
+        async let _ = try await FirebaseConstants
+            .FollowersCollection
+            .document(uid)
+            .collection("user-followers")
+            .document(currentUid)
+            .delete()
     }
     
     static func checkIfUSerIsFollowed(uid: String) async throws -> Bool {
