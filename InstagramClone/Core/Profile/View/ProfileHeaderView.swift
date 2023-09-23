@@ -66,10 +66,12 @@ struct ProfileHeaderView: View {
                 HStack(spacing: 8) {
                     UserStatView(value: user.stats?.postsCount ?? 0, title: "Posts")
                     
-                    UserStatView(value: user.stats?.followersCount ?? 0, title: "Followers")
+                    NavigationLink(value: UserListConfig.followers(uid: user.id)) {
+                        UserStatView(value: user.stats?.followersCount ?? 0, title: "Followers")
+                    }
                     
-                    UserStatView(value: user.stats?.followingCount ?? 0, title: "Following")
-                    
+                    NavigationLink(value: UserListConfig.following(uid: user.id)) {
+                        UserStatView(value: user.stats?.followingCount ?? 0, title: "Following")
                 }
             }
             .padding(.horizontal)
