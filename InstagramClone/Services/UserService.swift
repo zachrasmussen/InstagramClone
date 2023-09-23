@@ -104,13 +104,14 @@ extension UserService {
             .document(uid)
             .collection("user-followers")
             .getDocuments()
+            .count
                 
         async let postsCount = FirebaseConstants
             .PostCollection
             .whereField("ownerUid", isEqualTo: uid)
             .getDocuments()
+            .count
                 
-        print("DEBUG: Did call fetch user stats")
-        return .init(followingCount: followingCount, followersCount: followerCount, postsCount: postsCount)
+        return try await .init(followingCount: followingCount, followersCount: followerCount, postsCount: postsCount)
     }
 }

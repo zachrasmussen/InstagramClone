@@ -16,6 +16,7 @@ class ProfileViewModel: ObservableObject {
     }
     
     func fetchUserStats() {
+        guard user.stats == nil else { return }
         Task {
             self.user.stats = try await UserService.fetchUserStats(uid: user.id)
         }
@@ -40,6 +41,7 @@ extension ProfileViewModel {
     }
     
     func checkIfUserIsFollowed() {
+        guard user.isFollowed == nil else { return }
         Task {
             self.user.isFollowed = try await UserService.checkIfUSerIsFollowed(uid: user.id)
         }

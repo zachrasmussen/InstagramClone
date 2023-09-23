@@ -11,6 +11,8 @@
 		071DEA252AB8756D00C78E30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071DEA242AB8756D00C78E30 /* Constants.swift */; };
 		071DEA272AB8BCD900C78E30 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071DEA262AB8BCD900C78E30 /* ProfileViewModel.swift */; };
 		071DEA292ABFA22F00C78E30 /* UserListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071DEA282ABFA22F00C78E30 /* UserListConfig.swift */; };
+		071DEA2D2ABFAA6100C78E30 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071DEA2C2ABFAA6100C78E30 /* UserListView.swift */; };
+		071DEA312ABFAB1A00C78E30 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071DEA302ABFAB1A00C78E30 /* UserListViewModel.swift */; };
 		07DE63212AA77A85003C9537 /* InstagramCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63202AA77A85003C9537 /* InstagramCloneApp.swift */; };
 		07DE63232AA77A85003C9537 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE63222AA77A85003C9537 /* ContentView.swift */; };
 		07DE63252AA77A85003C9537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DE63242AA77A85003C9537 /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 		071DEA242AB8756D00C78E30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		071DEA262AB8BCD900C78E30 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		071DEA282ABFA22F00C78E30 /* UserListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListConfig.swift; sourceTree = "<group>"; };
+		071DEA2C2ABFAA6100C78E30 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		071DEA302ABFAB1A00C78E30 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		07DE631D2AA77A85003C9537 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DE63202AA77A85003C9537 /* InstagramCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneApp.swift; sourceTree = "<group>"; };
 		07DE63222AA77A85003C9537 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -436,6 +440,7 @@
 				07DE634E2AA7C01D003C9537 /* IGTextFieldModifier.swift */,
 				07DE635C2AA89E36003C9537 /* PostGridView.swift */,
 				07DE63912AAA35F9003C9537 /* CircularProfileImageView.swift */,
+				071DEA2C2ABFAA6100C78E30 /* UserListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				07DE639D2AAA64B9003C9537 /* PostGridViewModel.swift */,
+				071DEA302ABFAB1A00C78E30 /* UserListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -586,12 +592,14 @@
 				07DE63742AA8DDB1003C9537 /* AuthService.swift in Sources */,
 				071DEA252AB8756D00C78E30 /* Constants.swift in Sources */,
 				07FDD5B32AB3D8D90030AE1F /* CommentCell.swift in Sources */,
+				071DEA312ABFAB1A00C78E30 /* UserListViewModel.swift in Sources */,
 				07DE637F2AA9109B003C9537 /* UserService.swift in Sources */,
 				07DE635B2AA89398003C9537 /* Post.swift in Sources */,
 				07DE63212AA77A85003C9537 /* InstagramCloneApp.swift in Sources */,
 				07DE63592AA7D19D003C9537 /* CurrentUserProfileView.swift in Sources */,
 				07DE634A2AA79DE0003C9537 /* AddEmailView.swift in Sources */,
 				07DE635D2AA89E36003C9537 /* PostGridView.swift in Sources */,
+				071DEA2D2ABFAA6100C78E30 /* UserListView.swift in Sources */,
 				07DE63512AA7C124003C9537 /* CreateUsernameView.swift in Sources */,
 				07FDD5BD2AB4CA8C0030AE1F /* DeveloperPreview.swift in Sources */,
 				071DEA272AB8BCD900C78E30 /* ProfileViewModel.swift in Sources */,
