@@ -7,15 +7,19 @@
 
 import Foundation
 
+@MainActor
 class UserListViewModel: ObservableObject {
     @Published var users = [User]()
     
     init() {
-        Task { try await fetchAllUsers() }
+        print("DEBUG: did init")
     }
     
-    @MainActor
-    func fetchAllUsers() async throws {
-        self.users = try await UserService.fetchAllUsers()
+    func fetchUsers(forConfig config: UserListConfig) async {
+        do {
+            self.users = try await UserService.fetchAllUsers()
+        } catch {
+            print("DEBUG: Failed to fetch users with error \(error.localizedDescription)")
+        }
     }
 }
