@@ -13,7 +13,7 @@ struct SearchView: View {
     
     var body: some View {
         NavigationStack {
-            UserListView()
+            UserListView(config: .explore)
                 .navigationDestination(for: User.self, destination: { user in ProfileView(user: user)
                 })
                 .navigationTitle("Explore")

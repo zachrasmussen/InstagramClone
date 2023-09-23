@@ -17,7 +17,7 @@ class UserListViewModel: ObservableObject {
     
     func fetchUsers(forConfig config: UserListConfig) async {
         do {
-            self.users = try await UserService.fetchAllUsers()
+            self.users = try await UserService.fetchUsers(forConfig: config)
         } catch {
             print("DEBUG: Failed to fetch users with error \(error.localizedDescription)")
         }
