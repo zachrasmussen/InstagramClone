@@ -72,72 +72,77 @@ struct ProfileHeaderView: View {
                     
                     NavigationLink(value: UserListConfig.following(uid: user.id)) {
                         UserStatView(value: user.stats?.followingCount ?? 0, title: "Following")
+                    }
                 }
             }
-            .padding(.horizontal)
-            
-            // name and bio
-            VStack(alignment: .leading, spacing: 4) {
-                if let fullname = user.fullname {
-                    Text(fullname)
-                        .font(.footnote)
+                .padding(.horizontal)
+                
+                // name and bio
+                VStack(alignment: .leading, spacing: 4) {
+                    if let fullname = user.fullname {
+                        Text(fullname)
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                    }
+                    
+                    if let bio = user.bio {
+                        Text(bio)
+                            .font(.footnote)
+                    }
+                    
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal)
+                
+                // action button
+                
+                Button {
+                    if user.isCurrentUser {
+                        showEditProfile.toggle()
+                    } else {
+                        handleFollowTapped()
+                    }
+                } label: {
+                    Text(buttonTitle)
+                        .font(.subheadline)
                         .fontWeight(.semibold)
+                        .frame(width: 360, height: 32)
+                        .background(buttonBackgroundColor)
+                        .foregroundColor(buttonForegroundColor)
+                        .foregroundColor(.black)
+                        .cornerRadius(6)
+                        .overlay(RoundedRectangle(cornerRadius: 6)
+                            .stroke(buttonBorderColor, lineWidth: 1)
+                        )
+                    
                 }
                 
-                if let bio = user.bio {
-                    Text(bio)
-                    .font(.footnote)
+                Divider()
             }
-                
+        .navigationDestination(for: UserListConfig.self, destination: { config in
+            Text(config.navigationTitle)
+        })
+            .onAppear {
+                viewModel.fetchUserStats()
+                viewModel.checkIfUserIsFollowed()
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.horizontal)
-            
-            // action button
-            
-            Button {
-                if user.isCurrentUser {
-                    showEditProfile.toggle()
-                } else {
-                    handleFollowTapped()
-                }
-            } label: {
-                Text(buttonTitle)
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .frame(width: 360, height: 32)
-                    .background(buttonBackgroundColor)
-                    .foregroundColor(buttonForegroundColor)
-                    .foregroundColor(.black)
-                    .cornerRadius(6)
-                    .overlay(RoundedRectangle(cornerRadius: 6)
-                        .stroke(buttonBorderColor, lineWidth: 1)
-                    )
-                
+            .fullScreenCover(isPresented: $showEditProfile) {
+                EditProfileView(user: user)
             }
-            
-            Divider()
         }
-        .onAppear {
-            viewModel.fetchUserStats()
-            viewModel.checkIfUserIsFollowed()
-        }
-        .fullScreenCover(isPresented: $showEditProfile) {
-            EditProfileView(user: user)
+        
+        func handleFollowTapped() {
+            if isFollowed {
+                viewModel.unfollow()
+            } else {
+                viewModel.follow()
+            }
         }
     }
     
-    func handleFollowTapped() {
-        if isFollowed {
-            viewModel.unfollow()
-        } else {
-            viewModel.follow()
+    struct ProfileHeaderView_Previews: PreviewProvider {
+        static var previews: some View {
+            ProfileHeaderView(user: User.MOCK_USERS[0])
         }
     }
-}
 
-struct ProfileHeaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileHeaderView(user: User.MOCK_USERS[0])
-    }
-}
