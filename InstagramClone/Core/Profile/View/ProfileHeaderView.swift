@@ -116,6 +116,10 @@ struct ProfileHeaderView: View {
             
             Divider()
         }
+        .onAppear {
+            viewModel.fetchUserStats()
+            viewModel.checkIfUserIsFollowed()
+        }
         .fullScreenCover(isPresented: $showEditProfile) {
             EditProfileView(user: user)
         }
